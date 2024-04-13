@@ -1,13 +1,139 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(305deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 62%);
+  background: -webkit-linear-gradient(305deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 62%);
+  background: linear-gradient(305deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 62%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=1);
+}
+
+.player__wrapper {
+  width: 300px;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 62%);
+  border-radius: 25px;
+}
+
+.music__image {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  margin: 15px 0 0 15px;
+}
+
+.music__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.player__by__garniture {
+  color: rgb(183, 182, 182);
+  position: absolute;
+  margin: 295px 0 0 15px;
+  font-size: 13px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.music__name {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin: 310px 0 0 15px;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.author__name {
+  color: rgb(183, 182, 182);
+  position: absolute;
+  margin: 335px 0 0 15px;
+  font-size: 13px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.timer__range__wrapper {
+  width: 270px;
+  height: 20px;
+  position: absolute;
+  margin: 370px 0 0 15px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer__range__wrapper>p {
+  color: rgb(183, 182, 182);
+  font-size: 13px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.range__slider {
+  -webkit-appearance: none;
+  width: 72%;
+  height: 6px;
+  margin-top: 7.9px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.range__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.range__slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+.control__panel {
+  width: 210px;
+  height: 50px;
+  position: absolute;
+  margin: 420px 0 0 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control__panel__item {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control__panel__item__icon {
+  font-size: 35px;
+  color: white;
+}
+
+.control__panel__item:nth-child(4) .control__panel__item__icon {
+  padding-left: 8px;
 }
